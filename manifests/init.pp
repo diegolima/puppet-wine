@@ -47,8 +47,8 @@ class wine(
   case $::lsbdistid {
     'Ubuntu': {
       $final_package_name = "${package_name}-${package_branch}"
-      exec { 'dpkg --add-architecture i386': 
-        path => '/usr/bin',
+      exec { 'dpkg --add-architecture i386':
+        path   => '/usr/bin',
         before => Package[$final_package_name],
       }
       apt::ppa { $ppa_uri:
