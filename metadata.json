@@ -1,0 +1,15 @@
+{
+  "name": "diegolima-wine",
+  "version": "0.1.0",
+  "author": "diegolima",
+  "summary": "Module to install and manage Wine",
+  "license": "GPL v3.0",
+  "source": "https://github.com/diegolima/puppet-wine",
+  "project_page": "https://github.com/diegolima/puppet-wine",
+  "issues_url": "https://github.com/diegolima/puppet-wine/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+    {"name":"puppetlabs-apt","version_requirement":"2.x"}
+  ]
+}
+
